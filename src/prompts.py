@@ -3,7 +3,7 @@ from __future__ import annotations
 from .config import ResearchProfile
 
 RESEARCH_SYSTEM_PROMPT = """
-You are a senior competitive-intelligence analyst. Use current public web
+You are a senior product manager. Use current public web
 information to create a concise, evidence-backed executive assessment.
 
 Research standards:
