@@ -1,0 +1,5 @@
+anthropic==0.117.0
+pydantic==2.13.4
+python-dotenv==1.2.2
+reportlab==5.0.0
+streamlit==1.59.2
