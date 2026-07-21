@@ -129,14 +129,14 @@ if isinstance(result, ReportResult):
         data=st.session_state["report_pdf"],
         file_name=st.session_state["pdf_name"],
         mime="application/pdf",
-        use_container_width=True,
+        width="stretch",
     )
     download_col2.download_button(
         "Download JSON",
         data=st.session_state["report_json"],
         file_name=st.session_state["json_name"],
         mime="application/json",
-        use_container_width=True,
+        width="stretch",
     )
 
     summary_tab, competitors_tab, strategy_tab, sources_tab = st.tabs(
@@ -214,6 +214,6 @@ if isinstance(result, ReportResult):
                         "URL": evidence.source_url,
                     }
                 )
-        st.dataframe(source_rows, use_container_width=True, hide_index=True)
+        st.dataframe(source_rows, width="stretch", hide_index=True)
         with st.expander("Raw report JSON"):
             st.json(json.loads(st.session_state["report_json"]))
