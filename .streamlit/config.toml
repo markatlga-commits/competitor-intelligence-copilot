@@ -1,0 +1,12 @@
+[theme]
+base = "light"
+primaryColor = "#4A4A4A"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F4F7F8"
+textColor = "#2F2F2F"
+
+font = "Outfit:https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap"
+headingFont = "Outfit:https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap"
+
+baseFontWeight = 400
+headingFontWeights = [500, 500, 500, 500, 500, 500]
