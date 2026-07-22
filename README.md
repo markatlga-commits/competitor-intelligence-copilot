@@ -80,8 +80,8 @@ python -m streamlit run app.py
 | Profile | Description |
 |---|---|
 | Quick | A straightforward assessment with two current signals for each competitor. |
-| Balanced | Additional evidence and strategic detail |
-| Deep | A broader review for complex strategic assessments |
+| Balanced | Additional evidence and strategic detail. |
+| Deep | A broader review for complex strategic assessments. |
 
 ## Responsible use
 
