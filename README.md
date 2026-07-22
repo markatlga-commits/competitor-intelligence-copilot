@@ -1,21 +1,18 @@
 # Competitive Intelligence Copilot
 
-Competitive Intelligence Copilot is a Python and Streamlit application that
-researches a company, identifies three strategically relevant competitors, and
-produces a source-backed executive report.
+The Competitive Intelligence Copilot is a Python and Streamlit app that analyzes a company’s details, identifies three key competitors, and generates an executive report based on reliable sources.
 
-The report emphasizes specific product moves, partnerships, leadership changes,
-customer segments, differentiators, threats, and strategic openings. Unsupported sections are omitted rather than filled with generic language. Narrative fields are accepted only when the research response finishes without truncation, and report text is normalized to complete sentences.
+The report highlights key product updates, partnerships, leadership changes, customer segments, differentiators, threats, and strategic opportunities. Sections that lack supporting information are left out instead of replaced with generic language. Narrative sections are only included when the research response is complete, and the report text is kept to full sentences.
 
 ## What it delivers
 
-- an evidence-backed executive summary and market definition
-- three ranked direct or emerging competitors
-- competitor positioning and customer focus
-- specific differentiators and current strategic signals
-- evidence-backed threats and opportunities
-- cross-competitor themes, whitespace, recommendations, and watch items
-- source-backed JSON and a downloadable executive PDF
+- an executive summary and market overview supported by evidence
+- three top competitors, either direct or emerging
+- how competitors are positioned and their target customers
+- key differences and current strategic indicators
+- threats and opportunities validated by data
+- common themes across competitors, gaps in the market, recommendations, and items to monitor
+- source-supported JSON data and a downloadable executive PDF
 
 ## Technology
 
@@ -41,9 +38,7 @@ Never commit an API key to the repository.
 
 ### 2. Create the Codespace
 
-Create a Codespace from the repository's `main` branch. The included
-development-container configuration installs the required dependencies and
-forwards Streamlit on port `8501`.
+Create a Codespace from the repository's `main` branch. The included development-container configuration installs the required dependencies and forwards Streamlit on port `8501`.
 
 ### 3. Validate the environment
 
@@ -57,8 +52,7 @@ python scripts/check_setup.py
 python -m streamlit run app.py
 ```
 
-If the application does not open automatically, open port `8501` from the
-Codespaces **Ports** panel.
+If the application does not open automatically, open port `8501` from the Codespaces **Ports** panel.
 
 ## Local setup
 
@@ -85,17 +79,14 @@ python -m streamlit run app.py
 
 | Profile | Description |
 |---|---|
-| Quick | A concise assessment with two current signals per competitor |
+| Quick | A straightforward assessment with two current signals for each competitor. |
 | Balanced | Additional evidence and strategic detail |
 | Deep | A broader review for complex strategic assessments |
 
 ## Responsible use
 
-The application relies on public web information. Results may be incomplete,
-delayed, or affected by source availability. Public signals do not confirm
-private company roadmaps.
+This application uses publicly available web information. As a result, the results can sometimes be incomplete or delayed, depending on the sources. Keep in mind that public signals don’t confirm private company plans.
 
 ## Security
 
-Each user provides their own Anthropic API key. See [SECURITY.md](SECURITY.md)
-for key-handling guidance.
+Each person provides their own Anthropic API key. See [SECURITY.md](SECURITY.md) for key-handling guidance.
