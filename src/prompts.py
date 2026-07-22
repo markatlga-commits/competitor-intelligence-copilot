@@ -73,8 +73,7 @@ def build_research_prompt(company_name: str, profile: ResearchProfile) -> str:
     return f"""
 Research the company named exactly: {company_name}
 
-Use no more than {profile.max_searches} broad web searches and no more than
-{limits['word_limit']} words total.
+Use no more than {profile.max_searches} broad web searches and no more than {limits['word_limit']} words total.
 
 Return this exact format:
 
